@@ -1,0 +1,80 @@
+.profileContainer{
+    display: flex;
+    align-items: center;
+}
+
+.profileContainer > img{
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+}
+
+.profileContainer div {
+    margin: 1.5rem;
+}
+
+.profileContainer div strong {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--title);
+}
+
+.profileContainer div p {
+    font-size: 1rem;
+    margin-top: .5rem;
+}
+
+.profileContainer div p img {
+    margin-right: .5rem;
+}
+
+.InputContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.InputContainer input{
+    padding: .4rem 1rem;
+
+    border: 0;
+    border-radius: 16px 0 0 16px;
+    border: 1px solid var(--blue);
+    
+    background: #4952b865;
+    
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: var(--title);
+
+    transition: background .6s ease;
+}
+
+.InputContainer input:hover{
+    background: #4952b89f;
+}
+
+.InputContainer input:focus{
+    background: #4952b89f;
+}
+
+.InputContainer input::placeholder{
+    transition: opacity .5s ease-in;
+    color:rgba(0, 0, 0, 0.589);
+}
+
+.InputContainer input:focus::placeholder{
+    opacity: 0;
+}
+
+.InputContainer button{
+    padding: .65rem 1rem;
+    margin-left: -.5rem;
+
+    border:0;
+    border-radius: 0 16px 16px 0;
+
+    background: var(--blue-dark);
+    color:var(--white);
+}
